@@ -1,7 +1,7 @@
-from JSON_builder import atualizar_json, json_dados
-from HTMLs_builder import html_builder
-from Scraper import montar_database
-from ProbCalculator import calcular_prob, montar_tabela
+from src.JSON_builder import atualizar_json, json_dados
+from src.HTMLs_builder import html_builder
+from src.Scraper import montar_database
+from src.ProbCalculator import calcular_prob, montar_tabela
 
 # Endereço das ligas no site totalcorner.com
 ligas = [16, 1, 7, 17, 12, 13, 14, 15, 70, 37,
@@ -15,8 +15,8 @@ dicionario = {'team_address': []}
 url_league_view = 'https://www.totalcorner.com/league/view/'
 url_team_view = 'https://www.totalcorner.com/team/view/'
 # Caminhos do JSON e de onde ficarão salvos os HTMLs
-path_json = 'JSON_ligas/ligas.json'
-htmls_path = 'htmls/'
+path_json = 'data/JSON_ligas/ligas.json'
+htmls_path = 'data/htmls/'
 
 json = json_dados(path_json)
 
@@ -30,6 +30,11 @@ def menu():
           '[4] - Calcular probabilidade de escanteio\n'
           '[5] - Montar a tabela de probabilidades\n'
           '[6] - Sair do programa\n')
+
+
+def flag_check(flag):
+    if flag != 'casa' and flag != 'fora':
+        return True
 
 
 while True:
@@ -51,6 +56,9 @@ while True:
         time = input('\nDigite o nome do time: ')
         flag = input('\nDigite "casa" para calcular a probabilidade do time fazer um escanteio jogando em casa'
                      '\nou digite "fora" para calcular a probabilidade do time jogando fora de casa: ')
+        if flag_check(flag):
+            print('\nOpção inválida\n')
+            continue
         intervalo = [int(input('\nDigite o intervalo de tempo desejado para que aconteça o escanteio: ')), int(input())]
         probabilidede = calcular_prob(time, intervalo, flag)
         if probabilidede:
@@ -60,6 +68,9 @@ while True:
     elif escolha == '5':
         flag = input('\nDigite "casa" para calcular a probabilidade do time fazer um escanteio jogando em casa'
                      '\nou digite "fora" para calcular a probabilidade do time jogando fora de casa: ')
+        if flag_check(flag):
+            print('\nOpção inválida\n')
+            continue
         intervalo = [int(input('\nDigite o intervalo de tempo desejado para que aconteça o escanteio: ')), int(input())]
         montar_tabela(json, intervalo, flag)
 
