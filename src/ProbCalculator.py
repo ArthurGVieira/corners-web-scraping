@@ -20,12 +20,9 @@ def calcular_prob(time, intervalo, flag):
     if flag == 'casa':
         escanteios_casa = dataframe['Escanteios Casa (minuto)'].loc[dataframe['Time Casa'] == time]
         lista_escanteios = convert_list(list(escanteios_casa))
-    elif flag == 'fora':
+    else:
         escanteios_fora = dataframe['Escanteios Fora (minuto)'].loc[dataframe['Time Fora'] == time]
         lista_escanteios = convert_list(list(escanteios_fora))
-    else:
-        print('Opção inválida')
-        return False
 
     for item in lista_escanteios:
         for minuto in item:
