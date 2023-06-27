@@ -19,3 +19,26 @@ O objetivo do projeto é demonstrar o processo de coleta de dados de websites po
 * Biblioteca BeautifulSoup >4.11.1
 * Biblioteca Pandas >1.5.0
 * Biblioteca tqdm >4.65.0
+
+## Estrutura de Arquivos
+```
+├── data
+│   ├── JSON_ligas
+│   │   ├── ligas.json
+│   ├── htmls
+│   │   ├── htmls.rar
+│   ├── times
+│   │   ├── times.rar
+├── plots
+│   ├── Tabela Probabilidades (casa).xlsx
+│   └── Tabela Probabilidades (fora).xlsx
+├── src
+│   ├── HTMLs_builder.py
+│   ├── JSON_builder.py
+│   ├── ProbCalculator.py
+│   └── Scraper.py
+├── LICENSE
+├── README.md
+├── main.py
+├── requirements.txt
+```
