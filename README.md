@@ -26,6 +26,9 @@ OU
 1. Extraia os arquivos de exemplo de data/htmls e data/times.
 2. Escolha uma das opções de plot.
 
+Nas duas tabelas de exemplo salvas na pasta **plot**, foram calculadas as probabilidades dos times marcarem 1 escanteio
+no intervalo de 0 a 10 minutos do jogo, ou seja, nos primeiros 10 minutos de jogo.
+
 ## Resumo
 O site escolhido para o web scraping foi o totalcorner.com, este é um site com um imenso banco de dados que possui 
 informações de times de todo o mundo. Algumas dessas informações são: últimas partidas que o time disputou, ataques 
@@ -35,10 +38,6 @@ gols e cartões vermelhos), etc.
 O primeiro passo foi escolher as ligas de futebol que seriam analisadas no projeto, e os times que seriam analisados
 seriam os times dentro dessas ligas. Depois de selecionadas, os números que indicam os endereços dessas ligas no site
 totalcorner foram salvos em uma lista no arquivo **main.py**.
-
-Ligas escolhidas:
-
-![campeonatos](C:\Users\arthu\PycharmProjects\Corners\imgs\ligas.png)
 
 Em seguida, um arquivo .json é montado contendo o número que corresponde ao **endereço de cada time no site, o nome da
 liga e os times que participam dessa liga**.
@@ -60,15 +59,6 @@ ficam salvos em arquivos .csv na pasta data/times.
 Por último, são usadas as informações dos escanteios da partida contidas nos **eventos do jogo**, para calcular a
 probabilidade do time fazer um escanteio jogando em casa ou jogando fora de casa, em um intervalo de minutos da partida
 que o usuário escolher. Essa probabilidade é calculada através da inferência estatística.
-
-Exemplos do plot da tabela de probabilidades:
-
-![plot1](C:\Users\arthu\PycharmProjects\Corners\imgs\plot1.png)
-![plot2](C:\Users\arthu\PycharmProjects\Corners\imgs\plot2.png)
-![plot3](C:\Users\arthu\PycharmProjects\Corners\imgs\plot3.png)
-
-Nesses 3 exemplos e nas duas tabelas salvas na pasta **plot**, foram calculadas as probabilidades dos times marcarem 1
-escanteio no intervalo de 0 a 10 minutos do jogo, ou seja, nos primeiros 10 minutos.
 
 ## Funcionalidades
 * Realizar a coleta do código html de um website com informações sobre diversos times de futebol.
