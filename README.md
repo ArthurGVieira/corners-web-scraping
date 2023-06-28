@@ -38,7 +38,7 @@ totalcorner foram salvos em uma lista no arquivo **main.py**.
 
 Ligas escolhidas:
 
-![campeonatos](C:\Users\arthu\PycharmProjects\Corners\imgs\ligas)
+![campeonatos](C:\Users\arthu\PycharmProjects\Corners\imgs\ligas.png)
 
 Em seguida, um arquivo .json é montado contendo o número que corresponde ao **endereço de cada time no site, o nome da
 liga e os times que participam dessa liga**.
@@ -63,9 +63,9 @@ que o usuário escolher. Essa probabilidade é calculada através da inferência
 
 Exemplos do plot da tabela de probabilidades:
 
-![plot1](C:\Users\arthu\PycharmProjects\Corners\imgs\plot1)
-![plot2](C:\Users\arthu\PycharmProjects\Corners\imgs\plot2)
-![plot3](C:\Users\arthu\PycharmProjects\Corners\imgs\plot3)
+![plot1](C:\Users\arthu\PycharmProjects\Corners\imgs\plot1.png)
+![plot2](C:\Users\arthu\PycharmProjects\Corners\imgs\plot2.png)
+![plot3](C:\Users\arthu\PycharmProjects\Corners\imgs\plot3.png)
 
 Nesses 3 exemplos e nas duas tabelas salvas na pasta **plot**, foram calculadas as probabilidades dos times marcarem 1
 escanteio no intervalo de 0 a 10 minutos do jogo, ou seja, nos primeiros 10 minutos.
