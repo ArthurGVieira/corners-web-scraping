@@ -7,6 +7,19 @@ O objetivo do projeto é demonstrar o processo de coleta de dados de websites po
 seguida, realizar um cálculo probabilístico através da análise dos dados coletados. O projeto utiliza a linguagem Python
 e bibliotecas populares como BeautifulSoup, RegularExpressions e Pandas.
 
+## Funcionalidades
+* Realizar a coleta do código html de um website com informações sobre diversos times de futebol.
+* Pré-processar e limpar os dados coletados.
+* Extrair as informações relevantes de cada jogo disputado pelo time.
+* Realizar análises estatísticas.
+* Gerar tabelas para visualização dos dados.
+
+## Requisitos
+* Python 3.9 ou superior
+* Biblioteca BeautifulSoup >4.11.1
+* Biblioteca Pandas >1.5.0
+* Biblioteca tqdm >4.65.0
+
 ## Funcionamento
 Instale as bibliotecas em seu ambiente python.
 ````
@@ -60,19 +73,6 @@ Por último, são usadas as informações dos escanteios da partida contidas nos
 probabilidade do time fazer um escanteio jogando em casa ou jogando fora de casa, em um intervalo de minutos da partida
 que o usuário escolher. Essa probabilidade é calculada através da inferência estatística.
 
-## Funcionalidades
-* Realizar a coleta do código html de um website com informações sobre diversos times de futebol.
-* Pré-processar e limpar os dados coletados.
-* Extrair as informações relevantes de cada jogo disputado pelo time.
-* Realizar análises estatísticas.
-* Gerar tabelas para visualização dos dados.
-
-## Requisitos
-* Python 3.9 ou superior
-* Biblioteca BeautifulSoup >4.11.1
-* Biblioteca Pandas >1.5.0
-* Biblioteca tqdm >4.65.0
-
 ## Estrutura de Arquivos
 ```
 ├── data
@@ -98,3 +98,7 @@ que o usuário escolher. Essa probabilidade é calculada através da inferência
 
 # Licença
 Este projeto está licenciado sob a [MIT License](https://opensource.org/license/mit/).
+
+# Referências
+- https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+- https://pandas.pydata.org/
