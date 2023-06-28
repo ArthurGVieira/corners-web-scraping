@@ -27,7 +27,7 @@ OU
 2. Escolha uma das opções de plot.
 
 Nas duas tabelas de exemplo salvas na pasta **plot**, foram calculadas as probabilidades dos times marcarem 1 escanteio
-no intervalo de 0 a 10 minutos do jogo, ou seja, nos primeiros 10 minutos de jogo.
+no intervalo de 0 a 10 minutos do jogo, ou seja, nos primeiros 10 minutos.
 
 ## Resumo
 O site escolhido para o web scraping foi o totalcorner.com, este é um site com um imenso banco de dados que possui 
